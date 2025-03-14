@@ -1,4 +1,4 @@
-# League of Legends, Position Analysis
+# League of Legends Position Analysis
 
 by Hannah Gonzalez (hagonzalez@ucsd.edu) and Connie Liu (col024@ucsd.edu)
 
@@ -8,7 +8,7 @@ by Hannah Gonzalez (hagonzalez@ucsd.edu) and Connie Liu (col024@ucsd.edu)
 
 This is a project from UC San Diego's Halıcıoğlu Data Science Institute's class, DSC80. 
 
-#### General Introduction:
+#### Overview of the Game, the Dataset, and our Goal
 
 League of Legends is a Multiplayer Online Battle Arena Game (MOBA) by Riot Games. Each game consists of two teams of five that battle out using abilities and items to destroy the enemy's base to win. This project will look into a dataset of the League of Legends game. Specifically, this dataset looks at the 2025 competitive matches data. 
 
@@ -61,8 +61,18 @@ Take a look at the head of the cleaned DataFrame:
 
 #### Exploratory Data Analysis
 
+##### Univariate Analysis
+
+Since each position will have a different number of kills throughout the game - because some positions naturally have more opportunities to secure kills than others, and typically, bot lane ("bot") and mid laners ("mid") tend to have more kills than other positions. We would like to observe if this trend holds true. This will be done by showing the distribution of kills for the five positions, where each position is represented by a different color, and the histograms are stacked to show how kills are distributed across the positions.
+
 Ex (change this)
 <iframe src="assets/10-80-enrollment.html" width=800 height=600 frameBorder=0></iframe>
+
+##### Bivariate Analysis
+
+Furthermore, continuing to understand if there is some significance between the kills or damage done by a position, we created bivariate boxplots between each position and their damage per minute (DPM). This graph shows us that what we predicted was correct, "mid" and "bot" positions tended to have a higher distribution of DPM.
+
+<iframe src="assets/dpm_by_position.html" width="100%" height="500px" frameborder="0"></iframe>
 
 ---
 
