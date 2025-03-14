@@ -1,6 +1,3 @@
-# League of Legends Position Analysis
-
-by Hannah Gonzalez (hagonzalez@ucsd.edu) and Connie Liu (col024@ucsd.edu)
 
 ---
 
