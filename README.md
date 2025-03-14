@@ -1,11 +1,9 @@
-
-#### by Hannah Gonzalez (hagonzalez@ucsd.edu) and Connie Liu (col024@ucsd.edu)
-
 ---
 
 ## Introduction
 
 This is a project from UC San Diego's Halıcıoğlu Data Science Institute's class, DSC80. 
+Authors: Hannah Gonzalez (hagonzalez@ucsd.edu) and Connie Liu (col024@ucsd.edu)
 
 #### Overview of the Game, the Dataset, and our Goal
 
