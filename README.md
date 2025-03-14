@@ -57,6 +57,7 @@ Additionally, we merged the "doublekills," "triplekills," "quadrakills," and "pe
 Lastly, we removed rows representing team statistics (rows where the "position" column has the value "team"), as our predictions focus solely on individual players rather than entire teams.
 
 Take a look at the head of the cleaned DataFrame:
+<iframe src="assets/index.html" width=800 height=600 frameBorder=0></iframe>
 
 #### Exploratory Data Analysis
 
