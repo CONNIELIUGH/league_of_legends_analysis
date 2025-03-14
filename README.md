@@ -51,4 +51,5 @@ print(counts[['Quarter', 'Count']].head().to_markdown(index=False))
 ---
 
 Fairness Analysis
+---
 
