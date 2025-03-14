@@ -1,4 +1,6 @@
 
+by Hannah Gonzalez (hagonzalez@ucsd.edu) and Connie Liu (col024@ucsd.edu)
+
 ---
 
 ## Introduction
