@@ -64,7 +64,7 @@ Let's take a look between the distributions of the **position** and **kills** co
 
 <iframe src="assets/position_distribution.html" width=800 height=600 frameBorder=0></iframe>
 
-Before looking into the cross reference between the position column and other columns, let's look at the position column distribution overall. Below is a graph of the distribution of the counts per position. As you can see, the distribution between each position is the same. This makes sense because while it's not required to have only one of each position, it's extremely beneficial for lane balance and team synergy. Furthermore, since this data comes from competitive matches, it's more likely that they would sit to this typical type of structure.
+Before looking into the cross reference between the position column and other columns, let's look at the position column distribution overall. Above is a graph of the distribution of the counts per position. As you can see, the distribution between each position is the same. This makes sense because while it's not required to have only one of each position, it's extremely beneficial for lane balance and team synergy. Furthermore, since this data comes from competitive matches, it's more likely that they would sit to this typical type of structure.
 
 
 
