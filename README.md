@@ -1,4 +1,4 @@
-
+5
 ## Introduction
 
 League of Legends Position Analysis is a data science project conducted in UC San Diego's Halıcıoğlu Data Science Institute's class, DSC80. This project utilizes skills in exploratory data analysis, hypothesis testing, baseline modeling, and fairness analysis. Overall, our objective is to analyze the League of Legends' positions and predict the positions based on the 2025 League of Legends competitive matches data.
@@ -144,8 +144,6 @@ For Baseline Model, we decide to use a Random Forest Classifier, the features we
 
 We have decided to encode four columns — 'kills', 'deaths', 'assists', and 'total cs' — using the StandardScaler. The reason for this is that each game in our dataset can have a different length, which in turn affects the values in these columns. For example, longer games might naturally result in higher counts for kills, deaths, assists, and total CS, making these raw values harder to compare across games. Applying the StandardScaler ensures that the values are on a consistent scale, which can improve the performance and accuracy of our model by allowing it to better interpret the relationships between these features and the target variable, regardless of the varying game lengths.
 
-<iframe src="assets/10-80-enrollment.html" width=800 height=600 frameBorder=0></iframe>
-
 After training our model with the training dataset, we evaluated it on the testing data and achieved an accuracy score of 73.5%. We believe this score is relatively high and accurate enough, as we have already incorporated a decent number of features. However, there is still room for improvement by including more relevant features and removing those that do not vary across positions.
 
 ---
@@ -157,15 +155,13 @@ We also decided to remove the columns 'total_cs' and 'wpm' because each position
 
 We tuned the parameters of our Random Forest Classifier using GridSearchCV. The two parameters we focused on were max_depth and n_estimators. We tested various combinations of values for max_depth, ranging from 3 to 200 in steps of 10, and for n_estimators, ranging from 10 to 200 in steps of 10. The best hyperparameters we found were a max_depth of 173 and n_estimators of 190. With these parameters, the accuracy score on the test data increased to 77.3%, showing a 4% improvement compared to our baseline model. We believe this is a significant accomplishment, especially considering the randomness involved in player position choices, which could be influenced by personal preference and chance.
 
-<iframe src="assets/10-80-enrollment.html" width=800 height=600 frameBorder=0></iframe>
-
 ---
 
 ## Fairness Analysis
 
 For our Fairness Analysis, we are going to assess parity of our predictive final model developed above is fair among different groups. Our question is: "does our model achieve accuracy parity predicting positions when kills are less than or equal to 10 and when kills are greater than 10?". To answer this question, we performed a permutation test and examined the difference in accuracy between the two groups. 
 
-Group A represents players with kills less than or equal to 10 and Group B represents players with kills greater than 10. Our evaluation metric is accuracy score and we will use the significance level of 5%.
+Group A represents players with kills less than or equal to 10 and Group B represents players with kills greater than 10. Our evaluation metric is accuracy score, and we will use the significance level of 5%.
 
 Null Hypothesis: Our model is fair. Its accuracy for Group A and Group B are roughly the same, and any differences are due to random chance.
 
@@ -173,7 +169,6 @@ Alternative Hypothesis: Our model is unfair. Its accuracy for Group A is higher 
 
 Test statistics: Difference between Group B accuracy and Group A accuracy. (Group B accuracy - Group A accuracy)
 
-<iframe src="assets/10-80-enrollment.html" width=800 height=600 frameBorder=0></iframe>
 
 ---
 
