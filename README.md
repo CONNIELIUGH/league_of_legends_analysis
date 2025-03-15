@@ -169,6 +169,8 @@ Group A represents players with kills less than or equal to 10 and Group B repre
 
 **Test statistics:** Difference between Group B accuracy and Group A accuracy. (Group B accuracy - Group A accuracy)
 
+**Result**: After performing the permutation test, the result p-value we got is **0.056** which is **greater** than the 5% significance level we chose. Thus we **fail to reject the null hypothesis.** The outcome implied that our model predicts positions for each player from both groups with similarly accurate levels. Thus, our model appears to be **fair**, exhibiting no discernible bias towards one group over the other based on the specified criteria.
+
 
 ---
 
