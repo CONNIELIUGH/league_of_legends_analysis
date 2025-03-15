@@ -12,7 +12,7 @@ Looking at the dataset, we were particularly interested in the position's column
 
 Ultimately, we will use columns to determine a player's position (Top, Jungle, Mid, Bot, or Support) because positions are not assigned or chosen randomly but can be determined based on a player's skill level, which may be reflected in other statistics within the dataset. We aim to verify this assumption by analyzing various player stats to predict their position.
 
-#### Introduction to Columns
+#### Introduction to the Columns
 
 We obtained the most recent 2025 match dataset from the website Oracle's Elixir, which contains 19,692 rows and 161 columns. The 2025 LoL Esports Match Data provides detailed information about team statistics as well as individual player statistics.
 
@@ -90,6 +90,7 @@ We grouped the data by the "position" column. As seen in the table above, each p
 ---
 
 ## Assessment of Missingness
+
 ##### NMAR Analysis
 In our dataset, the columns "ban1", "ban2", "ban3", "ban4", and "ban5" are classified as NMAR (Not Missing At Random) because each of these columns has a different number of missing values, and the missing values appear in different rows for each column. There is no evidence to suggest that the missingness in these columns is dependent on other columns in the dataset. The reasoning behind the missing values is tied to the missingness itself, as in the actual League of Legends game, players independently decide whether or not to ban a champion.
 
