@@ -60,32 +60,35 @@ Take a look at the head of the cleaned DataFrame:
 
 ##### Univariate Analysis
 
-Before looking into the cross reference between the position column and other columns, let's look at the position column distribution overall. Below is a graph of the distribution of the counts per position. As you can see, the distribution between each position is the same. This makes sense because while it's not required to have only one of each position, it's extremely beneficial for lane balance and team synergy. Furthermore, since this data comes from competitive matches, it's more likely that they would sit to this typical type of structure.
+Let's take a look between the distributions of the **position** and **kills** columns.
 
 <iframe src="assets/position_distribution.html" width=800 height=600 frameBorder=0></iframe>
 
+Before looking into the cross reference between the position column and other columns, let's look at the position column distribution overall. Below is a graph of the distribution of the counts per position. As you can see, the distribution between each position is the same. This makes sense because while it's not required to have only one of each position, it's extremely beneficial for lane balance and team synergy. Furthermore, since this data comes from competitive matches, it's more likely that they would sit to this typical type of structure.
 
-In a different sense, we should also consider the kill's column distribution. This will allow us to see what is considered the average and how each position may reflect differently based on the typical kill distribution. Below is the graph of the kill distribution.
 
 
 <iframe src="assets/kills_distribution.html" width=800 height=600 frameBorder=0></iframe>
+In a different sense, we should also consider the kill's column distribution. This will allow us to see what is considered the average and how each position may reflect differently based on the typical kill distribution. Above is the graph of the kill distribution.
+
 
 
 
 ##### Bivariate Analysis
 
-Since each position will have a different number of kills throughout the game - because some positions naturally have more opportunities to secure kills than others, and typically, bot lane ("bot") and mid laners ("mid") tend to have more kills than other positions. We would like to observe if this trend holds true. This will be done by showing the distribution of kills for the five positions, where each position is represented by a different color, and the histograms are stacked to show how kills are distributed across the positions.
+Let's take a look at the connections between position and kills, and position and Damage per Minute (DPM)
 
 <img src="assets/kills_distribution_by_position.png" alt="Kills Distribution" style="width: 500px; height: auto;">
 
-
-Furthermore, continuing to understand if there is some significance between the kills or damage done by a position, we created bivariate boxplots between each position and their damage per minute (DPM). This graph shows us that what we predicted was correct, "mid" and "bot" positions tended to have a higher distribution of DPM.
+Since each position will have a different number of kills throughout the game - because some positions naturally have more opportunities to secure kills than others, and typically, bot lane ("bot") and mid laners ("mid") tend to have more kills than other positions. We would like to observe if this trend holds true. This will be done by showing the distribution of kills for the five positions, where each position is represented by a different color, and the histograms are stacked to show how kills are distributed across the positions.
 
 <iframe src="assets/dpm_by_position.html" width="100%" height="500px" frameborder="0"></iframe>
 
+Furthermore, continuing to understand if there is some significance between the kills or damage done by a position, we created bivariate boxplots between each position and their damage per minute (DPM). This graph shows us that what we predicted was correct, "mid" and "bot" positions tended to have a higher distribution of DPM.
+
 ##### Interesting Aggregates
 
-We grouped the data by the "position" column. As seen in the table above, each position has different statistics for each attribute (column), further supporting that the columns we selected for predicting a player's position are valid, as they vary across different positions.
+We grouped the data by the **position** column. As seen in the table above, each position has different statistics for each attribute (column), further supporting that the columns we selected for predicting a player's position are valid, as they vary across different positions.
 
 <iframe src="assets/interesting_aggregates.html" width="100%" height="500px" frameborder="0"></iframe>
 ---
