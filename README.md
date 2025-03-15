@@ -142,6 +142,7 @@ From our previous hypothesis testing section, we found that each position has a 
 We will use accuracy score to evaluate our models since the primary goal is simply to determine whether the predicted position for each player is correct. In this case, we are interested in the overall percentage of correct predictions rather than balancing precision and recall, which is what the F1 score emphasizes. Given that the task is a straightforward classification of positions, accuracy provides a clear and direct measure of how well the model is performing in terms of correct predictions.
 
 To prevent overfitting, we will split the data into 80% for training and 20% for testing, and evaluate the model using the accuracy score.
+
 ---
 
 ## Baseline Model
@@ -166,6 +167,7 @@ We also decided to remove the columns 'total_cs' and 'wpm' because each position
 We tuned the parameters of our Random Forest Classifier using GridSearchCV. The two parameters we focused on were max_depth and n_estimators. We tested various combinations of values for max_depth, ranging from 3 to 200 in steps of 10, and for n_estimators, ranging from 10 to 200 in steps of 10. The best hyperparameters we found were a max_depth of 173 and n_estimators of 190. With these parameters, the accuracy score on the test data increased to 77.3%, showing a 4% improvement compared to our baseline model. We believe this is a significant accomplishment, especially considering the randomness involved in player position choices, which could be influenced by personal preference and chance.
 
 <iframe src="assets/10-80-enrollment.html" width=800 height=600 frameBorder=0></iframe>
+
 ---
 
 ## Fairness Analysis
@@ -181,5 +183,6 @@ Alternative Hypothesis: Our model is unfair. Its accuracy for Group A is higher 
 Test statistics: Difference between Group B accuracy and Group A accuracy. (Group B accuracy - Group A accuracy)
 
 <iframe src="assets/10-80-enrollment.html" width=800 height=600 frameBorder=0></iframe>
+
 ---
 
