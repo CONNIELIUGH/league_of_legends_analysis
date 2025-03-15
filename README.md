@@ -1,7 +1,8 @@
 
 ## Introduction
 
-This is a project from UC San Diego's Halıcıoğlu Data Science Institute's class, DSC80. 
+League of Legends Position Analysis is a data science project conducted in UC San Diego's Halıcıoğlu Data Science Institute's class, DSC80. This project utilizes skills in exploratory data analysis, hypothesis testing, baseline modeling, and fairness analysis. Overall, our objective is to analyze the League of Legends' positions and predict the positions based on the 2025 League of Legends competitive matches data.
+
 Authors: Hannah Gonzalez (hagonzalez@ucsd.edu) and Connie Liu (col024@ucsd.edu)
 
 #### Overview of the Game, the Dataset, and our Goal
