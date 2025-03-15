@@ -96,9 +96,9 @@ We grouped the data by the **position** column. As seen in the table above, each
 ## Assessment of Missingness
 
 ##### NMAR Analysis
-In our dataset, the columns "ban1", "ban2", "ban3", "ban4", and "ban5" are classified as NMAR (Not Missing At Random) because each of these columns has a different number of missing values, and the missing values appear in different rows for each column. There is no evidence to suggest that the missingness in these columns is dependent on other columns in the dataset. The reasoning behind the missing values is tied to the missingness itself, as in the actual League of Legends game, players independently decide whether or not to ban a champion.
+In our dataset, the columns "ban1", "ban2", "ban3", "ban4", and "ban5" **are** classified as **NMAR** (Not Missing At Random) because each of these columns has a different number of missing values, and the missing values appear in different rows for each column. There is **no evidence** to suggest that the missingness in these columns is dependent on other columns in the dataset. The reasoning behind the missing values is tied to the missingness itself, as in the actual League of Legends game, players independently decide whether or not to ban a champion.
 
-An additional column we would like to include is one that indicates the likelihood of a player banning another champion, with 1 representing "yes" and 0 representing "no." If the value in this new column is 0, then the five "ban" columns ("ban1", "ban2", "ban3", "ban4", "ban5") should likely be missing.
+An additional column we would like to include is one that indicates the likelihood of a player banning another champion, with 1 representing "yes" and 0 representing "no." If the value in this new column is 0, then the five "ban" columns ("ban1", "ban2", "ban3", "ban4", "ban5") **should likely be missing.**
 
 ##### Missing Dependency
 We would like to examine if the missingness of "killsat25" columns depends on the columns "league". The significance level we choose for this permutation test is 0.5.
