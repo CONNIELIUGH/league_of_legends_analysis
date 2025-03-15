@@ -163,11 +163,11 @@ For our Fairness Analysis, we are going to assess parity of our predictive final
 
 Group A represents players with kills less than or equal to 10 and Group B represents players with kills greater than 10. Our evaluation metric is accuracy score, and we will use the significance level of 5%.
 
-Null Hypothesis: Our model is fair. Its accuracy for Group A and Group B are roughly the same, and any differences are due to random chance.
+**Null Hypothesis:** Our model is **fair**. Its accuracy for Group A and Group B are roughly the same, and any differences are due to random chance.
 
-Alternative Hypothesis: Our model is unfair. Its accuracy for Group A is higher than for Group B.
+**Alternative Hypothesis:** Our model is **unfair.** Its accuracy for Group A is higher than for Group B.
 
-Test statistics: Difference between Group B accuracy and Group A accuracy. (Group B accuracy - Group A accuracy)
+**Test statistics:** Difference between Group B accuracy and Group A accuracy. (Group B accuracy - Group A accuracy)
 
 
 ---
