@@ -103,9 +103,9 @@ An additional column we would like to include is one that indicates the likeliho
 ##### Missing Dependency
 We would like to examine if the missingness of "killsat25" columns depends on the columns "league". The significance level we choose for this permutation test is 0.5.
 
-Null Hypothesis: Distribution of "league" when "killsat25" is missing is the same as distribution of "league" when "killsat25" isn't missing. 
+**Null Hypothesis:** Distribution of "league" when "killsat25" is missing is the same as distribution of "league" when "killsat25" isn't missing. 
 
-Alternative Hypothesis: Distribution of "league" when "killsat25" isn't missing is NOT the same as distribution of "league" when "killsat25" is missing. 
+**Alternative Hypothesis:** Distribution of "league" when "killsat25" isn't missing is NOT the same as distribution of "league" when "killsat25" is missing. 
 
 <iframe src="assets/test_tvds.html" width=800 height=600 frameBorder=0></iframe>
 
@@ -118,11 +118,9 @@ Since our league is a categorical value, we will use TVD as test statistics to c
 
 Since the goal of this project is to predict each player's position, the statistics for each role (e.g., kills, deaths, DPM, etc.) differ from one another. Through our research, we found that the "bot" and "mid" positions tend to have higher kill counts than other roles. In our hypothesis test, we aim to specifically analyze the "bot" position and determine whether it has a higher average kill count compared to the average kill count of all positions. Our test statistic will be the TVD (Total Variation Distance), as we are comparing two distributions, which could reflect potential differences in the distribution of kills. We will choose a significance level of 5% and calculate the p-value.
 
-Null Hypothesis (H0): The distribution of kills for the "bot" position is the same as the overall kills distribution across all positions.
+**Null Hypothesis (H0):** The distribution of kills for the "bot" position is the same as the overall kills distribution across all positions.
 
-Alternative Hypothesis (H1): The distribution of kills for the "bot" position is different from the overall kills distribution.
-
-<iframe src="assets/10-80-enrollment.html" width=800 height=600 frameBorder=0></iframe>
+**Alternative Hypothesis (H1):** The distribution of kills for the "bot" position is different from the overall kills distribution.
 
 After performing our hypothesis testing, we found a p value of 0, thus we reject the null hypothesis in favor of the alternative hypothesis that the distribution of kills for the "bot" position is different from the overall kills distribution.
 
