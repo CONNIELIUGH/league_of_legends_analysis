@@ -86,6 +86,7 @@ Furthermore, continuing to understand if there is some significance between the 
 ##### Interesting Aggregates
 
 We grouped the data by the "position" column. As seen in the table above, each position has different statistics for each attribute (column), further supporting that the columns we selected for predicting a player's position are valid, as they vary across different positions.
+
 ---
 
 ## Assessment of Missingness
