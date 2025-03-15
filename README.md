@@ -103,22 +103,10 @@ Null Hypothesis: Distribution of "league" when "killsat25" is missing is the sam
 
 Alternative Hypothesis: Distribution of "league" when "killsat25" isn't missing is NOT the same as distribution of "league" when "killsat25" is missing. 
 
-<iframe src="assets/10-80-enrollment.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/test_tvds.html" width=800 height=600 frameBorder=0></iframe>
 
-Since our league is a categorical vlaue, we will use TVD as test statistics to compare categorical distributions between when killsat25 is missing and when killsat25 isn't missing. We obtained a p value of 0 thus we reject the null hypothesis. 
+Since our league is a categorical value, we will use TVD as test statistics to compare categorical distributions between when killsat25 is missing and when killsat25 isn't missing. We obtained a p-value of 0 thus we reject the null hypothesis. 
 
-Ex table (change)
-```py
-print(counts[['Quarter', 'Count']].head().to_markdown(index=False))
-```
-
-| Quarter     |   Count |
-|:------------|--------:|
-| Fall 2020   |       3 |
-| Winter 2021 |       2 |
-| Spring 2021 |       6 |
-| Summer 2021 |       4 |
-| Fall 2021   |      55 |
 
 ---
 
