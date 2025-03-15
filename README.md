@@ -9,7 +9,7 @@ Authors: Hannah Gonzalez (hagonzalez@ucsd.edu) and Connie Liu (col024@ucsd.edu)
 
 League of Legends is a Multiplayer Online Battle Arena Game (MOBA) by Riot Games. Each game consists of two teams of five that battle out using abilities and items to destroy the enemy's base to win. This project will look into a dataset of the League of Legends game. Specifically, this dataset looks at the 2025 competitive matches data. 
 
-Looking at the dataset, we were particularly interested in the position's columns and will be taking a deeper look at what the position column looks like and see the possible factors that can be taken into consideration to predicting the position column.
+Looking at the dataset, we are interested in the question **how can we analyze the position column in the dataset and identify key factors that contribute to predicting it?**
 
 Ultimately, we will use columns to determine a player's position (Top, Jungle, Mid, Bot, or Support) because positions are not assigned or chosen randomly but can be determined based on a player's skill level, which may be reflected in other statistics within the dataset. We aim to verify this assumption by analyzing various player stats to predict their position.
 
