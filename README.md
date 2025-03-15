@@ -75,7 +75,7 @@ In a different sense, we should also consider the kill's column distribution. Th
 
 Since each position will have a different number of kills throughout the game - because some positions naturally have more opportunities to secure kills than others, and typically, bot lane ("bot") and mid laners ("mid") tend to have more kills than other positions. We would like to observe if this trend holds true. This will be done by showing the distribution of kills for the five positions, where each position is represented by a different color, and the histograms are stacked to show how kills are distributed across the positions.
 
-<iframe src="assets/kills_distribution_by_position.png" width=500 height=500 frameBorder=0></iframe>
+<img src="assets/kills_distribution_by_position.png" alt="Kills Distribution" style="width: 500px; height: auto;">
 
 
 Furthermore, continuing to understand if there is some significance between the kills or damage done by a position, we created bivariate boxplots between each position and their damage per minute (DPM). This graph shows us that what we predicted was correct, "mid" and "bot" positions tended to have a higher distribution of DPM.
